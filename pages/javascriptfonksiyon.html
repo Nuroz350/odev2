@@ -1,0 +1,166 @@
+<html>
+    <head>
+        <title>hw2_2016141056_oz_nur</title>
+        <link  rel="stylesheet" href="../css/lab4.css" />
+
+
+    </head>
+     <body class="javascriptfonsiyon">
+
+           <h1>JAVASCRIPT FONKSİYON KULLANIMI</h1>
+
+           <p>JavaScript fonksiyonları genel işlevi itibariyle diğer programlama dillerindeki fonksiyonlara benzerler. Ancak JavaScript fonksiyonları birer nesne olduğundan bir değerdirler ve bu yüzden farklı bir çok şekilde kullanılabilirler. Bu yazıda ve takip eden yazılarda JavaScript fonksiyonlarıyla ilgili genel konular ve farklı kullanım şekilleri anlatılmaktadır.
+        </p>
+        <img src="../assets/fonksiyon.jpg" alt="Javascript" width="300" height="194">
+        <h2>
+            FONKSİYON TANIMLAMA
+        </h2>
+        <P>KULLANIMI:</P>
+
+        <img src="../assets/fonksiyon01.jpg" alt="Javascript" width="300" height="194">
+        <p>Basit bir JavaScript fonksiyonu şöyle tanımlanabilir:</p>
+        <img src="../assets/fonksiyon02.jpg" alt="Javascript" width="300" height="194">
+        <pre>Bir fonksiyonu çağırmak için adını yazdıktan sonra eğer parametresi yoksa parantez açıp kapatarak çağırırız.
+
+            Örneğin üstteki fonksiyonu şöyle çağırabiliriz.</pre>
+            <img src="../assets/fonksiyon03.jpg" alt="Javascript" width="300" height="194">
+            <pre>Bir fonksiyon adının yanına parantezleri yazmadan kullanmak fonksiyonun gövdesini / kendisini döndürür.
+
+                Fonksiyonlar birer sınıf örneği (nesne) olduğundan bir değer olarak kullanılabilirler.
+                
+                Örnek:</pre>
+                <img src="../assets/fonksiyon04.jpg" alt="Javascript" width="300" height="194">
+
+                <pre>(console.log fonksiyonu parantez içinde verilen değeri konsola yazdırır. Konsolu görmek için tarayıcı penceresinde F12 tuşuna basın. Altta, sağda veya ayrıca açılan penceredeki konsol / console sekmesini tıklayın.)
+
+                    Çıktısı şöyle olacaktır:</pre>
+                    <img src="../assets/fonksiyon05.jpg" alt="Javascript" width="300" height="194">
+
+                    <pre>(Bazı tarayıcılarda sadece selam() metni görebilirsiniz. Bu durumda console.log(selam) yerine alert(selam) yazmayı deneyin.)
+                        Bu özellikten yararlanarak fonksiyonu bir değişkene atayıp ilgili fonksiyonu çağırabiliriz.
+                        </pre>
+                    
+                        <img src="../assets/fonksiyon06.jpg" alt="Javascript" width="300" height="194">
+                        
+
+       <h3>FONKSİYONA PARAMETRE GÖNDERME</h3>
+
+
+       <PRE>Fonksiyonlar 255 adede kadar parametre alabilirler. Fonksiyon parametreleri fonksiyon tanımında fonksiyon adından sonraki parantezlerin içinde birer isimle bildirilir ve birden çok parametre varsa aralarına virgül konur. Parametrelerde tip belirtilmez.
+
+        Parametre olarak verilen bir sayının karesini hesaplayıp çıktıya yazan bir fonksiyon şöyle yazılabilir.</PRE>
+      
+        <img src="../assets/fonksiyon07.jpg" alt="Javascript" width="300" height="194">
+         <p>Bu fonksiyonu şöyle çağırabiliriz.</p>
+     
+ 
+         <img src="../assets/fonksiyon08.jpg" alt="Javascript" width="300" height="194">
+         <pre>Çıktısı:
+
+            25
+            </pre>
+
+            <h4>FONKSİYON DEĞER DÖNDÜRME</h4>
+
+            <P>Fonksiyonlar, yaptıkları işlemlerin sonucunda bir değer döndürebilirler. Fonksiyondan değer döndürmek için return ifadesi kullanılır. Bu ifadenin yanına döndüreceği değer yazılır. Fonksiyonun döndürdüğü değer fonksiyon çağrısı kullanarak (örneğin kare(5) yazarak) bir işlemde kullanılabilir veya bir değişkene atanabilir.
+            </P>
+
+            <P>Bir sayının karesini hesaplayıp sonucu döndüren bir fonksiyon şöyle yazılabilir:</P>
+            <img src="../assets/fonksiyon09.jpg" alt="Javascript" width="300" height="194">
+             
+
+            <P>VEYA</P>
+            <img src="../assets/fonksiyon10.jpg" alt="Javascript" width="300" height="194">
+
+            <P>Bu fonksiyonu diğer fonksiyonlar gibi parametreleri ile beraber adını yazarak çağırırız. Ancak farklı olarak bundan bir değer döneceğinden bu değeri bir yerlerde kullanabiliriz.</P>
+             
+            <img src="../assets/fonksiyon11.jpg" alt="Javascript" width="300" height="194">
+
+            <PRE>ÇIKTISI
+                 55
+            </PRE>    
+             
+
+            <H5>FONKSİYON PARAMETRELERİNİ TEST ETMEK</H5>
+
+            <PRE>Fonksiyonlara fonksiyonun tanımında yer alan parametreleri göndermek zorunlu değildir. Bu yüzden parametrenin gönderilip gönderilmediğini veya gönderilen parametrenin tipini sorgulamak durumunda kalabiliriz.
+
+                Bir parametrenin gönderilip gönderilmediğini şöyle sınayabiliriz.
+                </PRE>
+
+                <img src="../assets/fonksiyon12.jpg" alt="Javascript" width="300" height="194">
+                 <PRE>
+                     8
+                     9
+                 </PRE>
+
+
+                 <PRE>Gönderilmeyen parametreler undefined değeri alırlar. Örnekte parametre bu değere sahipse (tanımlanmamışsa / gönderilmemişse) parametre değişkeninin değeri 2 yapılarak sayının karesinin alınmak istendiği varsayılıyor.
+
+                    JavaScript'in undefined değerini mantıksal karşılaştırmalarda false kabul etmesinden faydalanarak aynısını şu şekilde de yapabiliriz.
+                    </PRE>
+
+                    <img src="../assets/fonksiyon13.jpg" alt="Javascript" width="300" height="194">
+
+                    <pre>undefined gibi boş string, null ve NaN (bir sayı değil) gibi değerler de bu örnekteki gibi test edilebilir. Bu değerler de if sınamalarında false kabul edilir. Bunların haricindeki değerler de true olarak kabul edilir.
+
+                        Mantıksal olmayan değerlerin if ile sınanması işlemi genellikle bir değerin gönderilip gönderilmediğini test etmek için aşağıdaki gibi kullanılır.
+                    </pre>
+
+                    <img src="../assets/fonksiyon14.jpg" alt="Javascript" width="300" height="194">
+                     <p>Bazı durumlarda parametre ile değer gönderilmişse, gönderilen değeri, gönderilmemişse varsayılan bir değeri kullanmak için aşağıdaki gibi mantıksal karşılaştırmaların kısa devre özelliğinden yararlanırız.</p>
+
+                     <img src="../assets/fonksiyon15.jpg" alt="Javascript" width="300" height="194">
+
+                     <p>Mantıksal karşılaştırmalarda and (&&) kullanıldığında, soldaki değer false, ise sağdaki değer true olsa da sonuç değişmediğinden sağdaki değere bakılmaz. Or (||) kullanıldığında ise soldaki değer true ise gerek olmadığından sağdaki değere bakılmaz. Soldaki değer false ise sağdaki değere göre sonuca karar verilir.. Bu çoklu mantıksal karşılaştırmaların kısa devre özelliğidir. Örnekteki;
+                    </p>
+
+
+                    <img src="../assets/fonksiyon16.jpg" alt="Javascript" width="300" height="194">
+
+                    <pre>satırında bu özellikten yararlanılmıştır. Eğer us parametresi için bir değer gönderilmişse us değişkeninin yeni değeri yine kendisi olacaktır. Ancak us için bir değer yoksa (undefined, null vs. ise) soldaki değer false kabul edildiğinden sağdaki değere bakılır ve sonuç olarak us değişkenine 2 değeri atanır. Kısa devre özelliğinden JavaScript programlamada çokça yararlanılır. 
+
+                        Eğer parametrenin tipinden emin olmanız gerekirse bunun için typeof kullanabilirsiniz. typeof , yanında belirtilen değerin veya değişkenin sakladığı değerin tipini tanımlayan "undefined", "object", "boolean", "number", "string", "function" veya "symbol" metinlerinden birini döndürür.</pre>
+                    
+                        <img src="../assets/fonksiyon17.jpg" alt="Javascript" width="300" height="194">
+                         
+                        <pre>FONKSİYON VE DEĞİŞKEN KAPSAMI</pre>
+                    
+                        <P>Fonksiyonlar kendi dışında tanımlanan değişkenleri tanırlar. Anca bir fonksiyonun içinde tanımlanmış olan değişkenler diğer fonksiyonlar tarafından veya dışarıdan görülmezler.</P>
+
+
+
+                          <P>Fonksiyon dışındaki değişken örneği </P>
+                        <img src="../assets/fonksiyon18.jpg" alt="Javascript" width="300" height="194"> 
+                           
+                 
+                        <pre>ÇIKTISI
+                            5
+                        </pre>
+
+                        <p>Fonksiyon içindeki değişken örneği</p>
+                        <img src="../assets/fonksiyon19.jpg" alt="Javascript" width="300" height="194">
+                        
+                        <PRE>ÇIKTISI
+
+                            undefined
+
+                        Çıktı olarak undefined yazılmıştır. Fonksiyonun içinde tanımlanan değişkenler fonksiyonun dışından görülmezler.
+                        </PRE>
+                        
+
+                         
+                        
+
+
+
+
+
+
+        
+
+
+
+
+     </body>
+</html>

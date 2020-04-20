@@ -1,0 +1,217 @@
+<html>
+  <head>
+    <title>hw2_2016141056_oz_nur</title>
+    <link rel="stylesheet" href="../css/lab4.css" />
+  
+  </head>
+  <body class="stringler">
+  
+    <h1>
+      STRINGLER,SAYILAR,DIZILER,DIZI ISLEMLERI
+   </h1>
+       
+   <H2>JavaScript'te Diziler (Array)</H2>
+     <PRE>
+        
+       Değişkenler ve Veri Türleri dersinde diziler (array) konusuna kısaca değinmiştik. Birden fazla verinin saklanması için oluşturulan değişkenlere dizi adı verilir. Dizilerin oluşturulmasındaki temel düşünce birden fazla veriye tek bir değişken altından erişebilmektir.
+   
+       Değişkenlerdeki her bir veriye eleman denir. Dizi elemanları indeks değerleri ile çağrılırlar. İndeks bir elemanın dizi içinde nerede yer aldığını gösterir.
+       
+       İndeksler bir çok programlama dilinde olduğu gibi 0'dan başlar. 0'dan başlamasının sebebi programlama dillerinin tamamen insan mantığı oluşturulmuş olduğunun göstergesidir.
+       
+       Dizide eleman tanımlamak için kullanılan üç yöntem vardır. İlkini sözünü ettiğim derste görmüştük.
+   
+   
+      1. < script>
+      2.    var sayilar = new Array("sıfır", "bir", "iki", "üç");
+      3.    document.write(sayilar);
+      4. < /script>  
+              
+      
+      Bu daha önce öğrendiğimiz yöntemdir. sayilar adında 4 elemanlı bir dizi oluşturduk.
+           
+   
+      <ul style="list-style-type:disc;">
+       <li>sıfır,bir,iki,üç</li>
+     
+     </ul>
+          
+   
+              
+   
+       Çıktımız ise bu şekilde olacaktır.
+   
+     1.  < script>
+     2.      var sayilar = ["sıfır", "bir", "iki", "üç"];
+     3.      document.write(sayilar);
+     4.  < /script>                                
+       Bu da ikinci yöntemdir. Dizi elemanlarını köşeli parantezler ([ ]) içerisine yazıyoruz.
+       
+       <ul style="list-style-type:disc;">
+           <li>sıfır,bir,iki,üç</li>
+         
+         </ul>
+                
+     </PRE>
+       <h3>Dizi Elemanlarını Değiştirme</h3>
+         
+       <pre>JavaScript'te dizi elemanları oldukça kolay bir şekilde değiştirilebililr.
+   
+         1.  < script>
+         2.     var sayilar = ["sıfır", "bir", "iki", "üç"];
+         3.      sayilar[2] = "iikii";
+         4.     document.write(sayilar);
+         5. < /script>                                
+           Örneğin sayilar dizisindeki "iki" elemanını "iikii" olarak değiştirdik. Bunun için değiştirmek istediğimiz elemanın indeks değerini yazdıktan sonra yeni değeri atamamız yeterlidir.
+       </pre>
+   
+      <h4>Diziye Yeni Eleman Ekleme</h4>
+           <pre>
+                
+               JavaScript'te diziye yeni eleman eklemek de oldukça kolaydır.
+   
+   push( ) metodu: push dilimizde ittirmek anlamına gelmektedir. JavaScript'te dizinin sonuna eleman eklemek için kullanılır.
+   
+        1.< script>
+        2.var sayilar = ["sıfır", "bir", "iki", "üç"];
+        3.sayilar.push("dört", "beş");
+        4.document.write(sayilar);
+        5.< /script>                                
+   Bu şekilde iki yeni eleman daha eklemiş olduk.
+           </pre>
+            
+           
+           
+              
+   
+       <h5>Diziden Eleman Silme</h5>
+               
+             <pre>
+               splice( ) metodu: splice dilimizde iki ucu birbirine birleştirmek gibi bir anlama gelmektedir. JavaScript'te ise belirtilen index değerinden sonra silinecek eleman ya da elemanlar için kullanılır. splice metodunda replace'de olduğu iki parametre vardır. İlk parametre silinecek indeks konumunu, ikinci parametre ise indeksten sonra kaç adet elemanın silineceğini belirtir.
+   
+           
+                 1. < script>
+                 2.  var sayilar = ["sıfır", "bir", "iki", "üç"];
+                 3.  sayilar.unshift("eksi üç", "eksi iki", "eksi bir");
+                 4.  sayilar.splice(0, 3);
+                 5.  document.write(sayilar);
+                 6.< /script>                                
+               Biraz karışık gibi gelmiş olabilir. Burada şunu yaptık: Negatif değerli sayıları ekledik ve daha sonra bu sayıları diziden çıkardık.
+   
+             </pre>
+             <ul style="list-style-type:disc;">
+               <li>sıfır,bir,iki,üç</li>
+             
+             </ul>
+   
+   
+         <p>DİZİLERDE BİRLEŞTİRME</P>
+            
+        <pre>
+   
+        concat( ) metodu: Birden fazla diziyi birleştirmek için kullanılır.
+   
+   
+        1.< script>
+        2.    var sayilar = ["sıfır", "bir", "iki", "üç"];
+        3.    var cinler = ["zinzin", "zomzom", "zepzep"];
+        4.    var sayilar_ve_cinler = sayilar.concat(cinler);
+        5.    document.write(sayilar_ve_cinler);
+        6.</ script>                                
+        Burada sayilar ve cinler adında iki dizimiz var. sayilar_ve_cinler adında yeni bir dizi tanımlıyoruz ve iki dizimizi birleştiriyoruz.
+   
+        </pre>
+        <ul style="list-style-type:disc;">
+           <li>sıfır,bir,iki,üç,zinzin,zomzom,zepzep</li>
+         
+         </ul>
+                 <h6>Javascript Stringler - Karakter Katarları</h6>
+   
+       <pre>
+          1. < script>
+          2.
+          3.    //Tek tirnak veya cift tirnak kullanabiliriz
+          4.     var ders1="Javascript Dersleri";
+          5.     var ders2='Javascript Dersleri';
+          6. 
+          7. 
+          8.     //String tek tirnak(yada cift tirnak) icindeyse
+          9.     //icerde kullanilan ayni türden tirnkalar problem yaratir.
+          10. 
+          11.     //Asagidaki ornekte tek tirnak sorun cikarir
+          12.     //var konu='Javascript'in Avantajı'; 
+          13. 
+          14.    //Sorunu simdi duzeltelim icerdeki tek tirnak
+          15.     //string icin kullanilan tirnakla karismasin diye 
+          16.     //Kacis karakteri kullandik (\)
+          17.     //Bu karakter ekranda gorunmez
+          18.     var konu='Javascript\'in Avantajı';
+          19. 
+          20. 
+          21.     //Bu kullanim bicimide hata verir
+          22.     //var cumle="Bugun "Javascript" Ogrenecegiz";
+          23. 
+          24.     //sorunu duzeltelim
+          25.     var cumle="Bugun \"Javascript\" Ogrenecegiz";//yontem-1
+          26.     var cumle2="Bugun 'Javascript' Ogrenecegiz";//yontem-2
+          27. 
+          28. 
+          39. </ script>
+   
+            Stringler hakkinda daha once bir miktar bilgi ogrendik,bu derste biraz daha ayrintili konuyu ele alacağız. Hemen en temel kullanimi ve dikkat etmemiz gereken noktalari gosterecek ornegimize bakalim.
+       </pre>
+         <p>
+           Javascript String Nesne Iliskisi
+         </p>
+           <pre>
+   
+               Simdiye kadar string degiskenlerini isim:deger seklindeki atamalarla yaptik,fakat Object() nesnesine parametre gondererekte string olusturabiliriz,simdiki ornekte bu iki kullanim bicimini degerlendirelim.
+   
+   1.Bu yeni ogrendiğimiz yontemi istisnalar disinda tercih etmeyin
+   2.Hiz acisindan olumsuz etkiye sahiptir
+   3.Ve bazi beklenmedik sonuclarla sizi yaniltabilir
+   1.<  script>
+   2.
+   3.//Simdiye kadar uyguladigimiz yontem
+   4.var isim1="Javascript";
+   5.
+   6.
+   7.//Nesne yardimiyla
+   8.var isim2=new Object("Javascript");
+   9.
+   10.
+   11.//Simdi iki degiskenin tipine bakalim,isim1=string,isim2=object olacaktir
+   12.alert("isim1'in tipi="+typeof isim1+" ve isim2'nin tipi="+typeof isim2);
+   13.
+   14.
+   15.
+   16.//Peki bizi nasil yaniltir bu kullanim gorelim
+   17.var esitmi=isim1==isim2;//Burdan true donecektir
+   18.var esitmi2=isim1===isim2;//burdan false gelir
+   19.
+   20.
+   21.//Baska bir durum,Nesnelerin Karsilastirilmasi
+   22.var x=new String("java");
+   23.var y=new String("java");
+   24.
+   25.var esitmi=x==y;//false
+   26.var esitmi=x===y;//false
+   
+   
+   < /script>
+   </pre>
+   
+  </body>
+  
+  </html>
+
+
+
+
+</html>
+
+
+
+
+
+

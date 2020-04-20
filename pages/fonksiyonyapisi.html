@@ -1,0 +1,125 @@
+<html>
+            <head>
+              <title>hw2_2016141056_oz_nur</title>
+              <link rel="stylesheet" href="../css/lab4.css" />
+            
+            </head>
+            <body class="fonksiyonyapisi">
+            
+              <h>
+                FONKSIYON KULLANIMI
+            </h>
+            <PRE>
+                JavaScript’te fonksiyonlar, “büyülü dil yapısı” değil yalnızca özel bir değer tipidir.
+               
+            
+                <img src="../assets/fonksiyon.jpg" alt="Javascript" width="300" height="194">
+            
+            
+                Daha önceden fonksiyon tanımlama için aşağıdaki form kullanılmıştı.
+            
+            
+            
+              1.  function selamVer() {
+              2. alert( "Merhaba" );
+              3.}
+                   
+              Diğer bir şekilde de fonksiyon tanımlanabilir. Bu da fonksiyon ifadesi olarak adlandırılır.
+            
+              Aşağıdaki gibi görünür:
+            
+              1.let selamVer = function() {
+              2. alert( "Merhaba" );
+              3. };
+            
+            
+            
+              Burada fonksiyon yaratıldı ve doğrudan değişkene atandı, tıpkı diğer dillerde olduğu gibi. Fonksiyonun nasıl tanımlandığına bakmaksızın, bu fonksiyon sadece selamVer içinde saklanan bir değerdir.
+            
+              Yukarıdaki kod örneklerinin anlamları aynıdır: “bir fonksiyon yarat ve bunu selamVer değişkenine ata”
+              
+              Hatta yazdığımız fonksiyonu alert ile ekrana basmak da mümkündür.
+            
+            
+              1. function selamVer() {
+              2. alert( "Merhaba" );
+              3.}
+              
+              4.alert( selamVer ); // fonksiyonun kodunu gösterir.
+                
+              Dikkat ederseniz son kodda () bulunmamaktadır. Bundan dolayı selamVer fonksiyonu çalışmayacaktır. Bazı dillerde ne zaman fonksiyonun ismini verseniz çalışır fakat JavaScript’te çalışabilmesi için () kullanmanız gerekmektedir.
+            
+            JavaScript’te fonksiyonlar değer olduğundan dolayı bunlarla uğraşılabilir. Yukarıdaki kod ekrana kaynak kodunu basar.
+            
+            Tabiki selamVer() diye çağırılabildiğinden dolayı özel bir değerdir.
+            
+            Fakat yine de değerdir. Bundan dolayı diğer değerlerle uğraşıldığı gibi bununla da aynı şekilde çalışılabilir.
+            
+            Örneğin bir fonksiyon başka bir değişkene kopyalanabilir.
+              
+            
+            1.function selamVer() {   // (1) oluştur
+            2. alert( "Merhaba" );
+            3.}
+            
+            4.let func = selamVer;    // (2) kopyala
+            
+            5.func(); // Merhaba     // (3) kopyası!
+            6.selamVer(); // Merhaba    //    kendisi.
+            
+            
+            
+            
+            
+            
+            </PRE>
+             
+            
+             <p>
+              Geriçağrım Fonksiyonları ( Callback functions )
+             </p>
+               
+            
+             <pre>
+              Fonksiyonların değer olarak paslanması ve fonksiyon ifadelerini biraz daha incelenmesi yerinde olur.
+            
+              sor(soru,evet,hayir) adında 3 parametre alan bir fonksiyon yazılacak olursa:
+              
+              soru
+                Soru cümlesi
+              evet
+                Eğer doğru ise çalışacak fonksiyon
+              hayir
+              Eğer cevap yanlış ise yapılacak fonksiyon
+              Fonksiyon soru sormalı, bu sorunun cevabına göre evet() veya hayir() fonksiyonları çağırılacaktır.
+              
+              
+              
+              
+              
+              1.function sor(soru, evet, hayir) {
+              2.  if (confirm(soru)) evet()
+              3.  else hayir();
+              4.}
+              5.
+              6. function tamamGoster() {
+              7.alert( "Kabul ettiniz" );
+              8.}
+              9.
+              10.function iptalGoster() {
+              11. alert( "Çalışmasını durdurdunuz" );
+              12.}
+              13.// kullanım: tamamGoster, iptalGoster fonksiyona parametre olarak gönderilmiştir.
+              14.sor("Kabul ediyor musunuz?", tamamGoster, iptalGoster);
+             </pre>
+            </body>
+            
+            </html>
+    
+
+
+
+
+
+
+

@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <title>hw2_2016141056_oz_nur</title>
+        <link rel="stylesheet" href="css/lab4.css" />
+    
+    </head>
+    <body class="olaylar">
+        <h1>
+            EVENTS(OLAYLAR)
+        </h1>
+           <PRE>
+            JavaScript nesne tabanlı (object-oriented) bir dildir. Nesne tabanlı olmasından dolayı olay yönelimli çalışır. Örneğin; bir button'a tıkladıktan sonra çıkan uyarı penceresi JavaScript'in nesne tabanlı bir dil olduğunun açık bir göstergesidir.
+        
+        JavaScript'te bazı olayların gerçekleştirilmesi için geliştirilmiş ve web sitelerinde senelerdir başarı ile kullanılan hazır olaylar vardır. Şimdi bu olayları öğrenmeye başlayalım.
+        
+           </PRE>
+           <H2> ONLOAD OLAYI</H2>
+           <P>Daima <body> etiketi ile kullanılır. Sayfa yüklendikten sonra gerçekleşecek olayları yerine getirir.</P>
+                  
+            <PRE>
+        
+        1.< !DOCTYPE HTML>
+        2. < html>
+        3.    < head>
+        4.        < meta charset="UTF-8" />
+        5.        < meta name="viewport" content="width=device-width" />
+        6.       < title>@ViewBag.Title</title>
+        7.        < script>
+        8.            function hosGeldiniz() {
+        10.                alert("Sayfamıza hoş geldiniz!");
+        11.            }
+        12.        </ script>     
+        13.   </ head>
+        14.    < body onload="hosGeldiniz()">
+        16.        < div>
+        17.            @RenderBody()
+        18.        < /div>
+        19.   < /body>
+        20.< /html>      
+           
+        
+        
+        hosGeldiniz( ) isimli bir fonksiyon tanımladım ve bu fonksiyonumu onload olayı ile body etiketi içerisinde kullandım. Sayfam yüklendikten sonra "Sayfamıza hoş geldiniz!" bildirimi yayınlanacaktır. onload olayı bu şekilde çalışmaktadır.
+        
+        
+        
+        1.< DOCTYPE HTML>
+        2. < html>
+        3.    < head>
+        4.        < meta charset="UTF-8" />
+        5.        < meta name="viewport" content="width=device-width" />
+        6.        <  title>@ViewBag.Title</title>
+        7.        < script>
+        8.            window.onload = alert("Sayfamıza hoş geldiniz!");
+        9.        </ script>     
+        10.    </ head>
+        11.    < body>
+        12.       < div>
+        13.            @RenderBody()
+        14.       </ div>
+        15.   </ body>
+        16.</ html>                     
+        
+        Bu kodları onload olayını kullanmadan bu şekilde de yazabiliriz.
+            
+        
+        
+        1.< script>
+        2.    function onayla() {
+        3.        alert("Mesajınız başarı ile gönderildi. Sizinle en yakın zamanda iletişime geçeceğiz.");
+        4.    }
+        5.    function temizle() {
+        6.      return confirm("Form temizlensin mi?");
+        7.   }
+        8.</ script>    
+        9.< form>
+        10.    < fieldset>
+        11.        < legend>Mesaj Gönder</ legend> < label>Rumuzunuz:         </ label> < input type="text"/> <br/><br/>
+        12.        < label>e-Posta Adresiniz:  < /label> < input type="text"/> <br/><br/>
+        13.        < label>Doğum Tarihiniz:   </ label> < input type="text"/> <br/><br/>
+        14.        < label>Mesajınız:         </ label> < textarea  rows="2" cols="18"></textarea> <br/><br/>
+        15.        < input type="submit" value="Onayla" onclick="onayla()"/><br/><br/>
+        16.        < input type="reset" value="Formu Temizle" onclick="return temizle()"/>
+        17.    </ fieldset>
+        18.< /form>
+          
+        
+        Şeklinde kodlarımız olsun. HTML5 derslerinde kullandığımız örnek bir form. İlk olarak onayla( ) ve temizle( ) isimli iki fonksiyon tanımladım. Bunları "Onayla" ve "Form Temizle" düğmelerinde kullandım.
+        
+           < /PRE>
+           
+      
+    </body>
+    
+    </html>
+
+
+
+
+</html>
+
+
+
+
+
+
+
+
+   

@@ -1,0 +1,87 @@
+
+
+
+  body{
+    background-color:rgb(20, 95, 105);}
+    .baslik   {color:rgb(51, 145, 67);}
+    h1 {color:yellow;text-align: center;}
+    #basliklar{font-size: 50px;}
+
+
+
+
+   
+    .nurr{color: yellowgreen;}
+    .nur {color: rgb(124, 22, 124);}
+    .nur1{color: tomato;}
+    .nur2{color: yellowgreen;}
+    .nur3{color: rgb(124, 22, 124)}
+    .nur4{color: tomato;}
+    .nur5{color: yellowgreen;}
+    .nur6{color: rgb(124, 22, 124);}
+    .nur7{color: tomato ;}
+    .nur8{color: yellowgreen;}
+    .nur9{color: rgb(124, 22, 124);}
+    .nur10{color: tomato;}
+    .nur11{color: yellowgreen;}
+    .nur12{color: rgb(124, 22, 124);}
+    .nur13{color: tomato;}
+    .nur14{color:yellowgreen;}
+    .javascriptfonksiyon{
+        background-color: pink;
+    }
+    .javascriptobject{
+        background-color: rgb(93, 31, 122);
+    }
+    .javascriptdom{
+        background-color: rgb(138, 167, 34);
+    }
+    .formsayfasi{
+        background-color: aquamarine;
+    }
+
+.donguler{
+    background-color: pink;
+}
+
+.aritmetik{
+    background-color: darkorange;
+}
+.javagiris{
+    background-color: darkseagreen;
+}
+.calismayapisi{
+    background-color: green;
+}
+.degiskenler{
+    background-color: honeydew;
+}
+.veritipleri{
+    background-color: khaki;
+
+}
+.olaylar{
+    background-color: lightsteelblue;
+}
+.stringler{
+    background-color: mediumseagreen;
+}
+.syntax{
+    background-color: peru;
+}
+.operatorler{
+    background-color: slategrey;
+}
+.ifkosulyapilari{
+    background-color:rgb(238, 212, 202);
+}
+.tipdonusumler{
+    background-color: rgb(103, 116, 32);
+}
+.fonksiyonyapisi{
+    background-color: indianred;
+}
+fieldset{background-color:black;}
+            body{background-color:chartreuse;}
+            label{background-color: crimson;}
+            input{background-color: darkgoldenrod;}

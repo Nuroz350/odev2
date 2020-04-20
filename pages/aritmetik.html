@@ -1,0 +1,170 @@
+<html>
+   <head>
+    <title>hw2_2016141056_oz_nur</title>
+    <link rel="stylesheet" href="../css/lab4.css" />
+
+
+   </head>
+
+    <body class="aritmetik">     
+
+   <H1>ARİTMETİK</H1>
+
+   <P>
+       ARİTMETİK İŞARETLER
+   </P>
+   <P>
+       Sayısal veri içeren değişkenler arasında işlem yapmak için aşağıdaki operatör işaretlerini kullanırız.
+   </P>
+   <P>
+       <table>
+           <tr>
+             <th>işaretler</th>
+             <th>anlamı</th>
+             <th>örnek</th>
+             <th>sonuç</th>
+       
+           </tr>
+           <tr>
+               <td>+</td>
+               <td>toplama</td>
+               <td>a=5+10;</td>
+               <td>15</td>
+             </tr>
+             <tr>
+                 <td>-</td>
+                 <td>çıkarma</td>
+                 <td>10-5;</td>
+                 <td>5</td>
+             </tr>
+             <tr>
+                 <td>*</td>
+                 <td>çarpma</td>
+                 <td>10*5;</td>
+                 <td>50</td>
+             </tr>
+             <tr>
+                 <td>/</td>
+                 <td>bölme</td>
+                 <td>10/5;</td>
+                 <td>2</td>
+                 <tr>
+                     <td>%</td>
+                     <td>mod</td>
+                     <td>a= 10% 3;</td>
+                     <td>1</td>
+                     <tr>
+                      <td>++</td>
+                      <td>sayıyı bir artır</td>
+                      <td>a= 2; a++;</td>
+                      <td>3</td>
+                      <tr>
+                          <td>--</td>
+                          <td>sayıyı bir azalt</td>
+                          <td>a=2; a–;</td>
+                          <td>1</td>
+                      </tr>
+                     </tr>
+       
+                 </tr>
+           
+       
+             </tr>
+   </P>   
+          
+      <pre>1- Atama Operatörü:
+       Operatörün sağındaki değeri, solundaki değere atamak için kullanılır. Operatör sembolü eşittir “=” işaretidir.
+       
+       Sözdizimi: degisken1 = degisken2;
+         
+       Örnek;
+   
+       JavaScript
+       1.var degisken1 = 10;
+       2.var degisken2 = degisken1;
+          
+   
+   
+       2- Toplama Operatörü;
+   Operatörün solundaki değer ile sağındaki değeri matematiksel olarak toplama işlemine tabi tutmak için kullanılır. Operatör sembolü artı “+” işaretidir.
+   
+   Sözdizimi: degisken1 + degisken2
+   
+   Örnek olarak iki adet değişken tanımlayıp bu değişken değerlerini toplama işlemine tabi tutalım;
+   
+   JavaScript
+   1.var degisken1 = 15;
+   2.var degisken2 = 22;
+   3.var sonuc = degisken1 + degisken2;
+   4.document.write(sonuc);
+   
+   Yukarıdaki kodlarda üçüncü satırda “degisken1” ve “degisken2” değişkenleri değerlerini toplayıp “sonuc” değişkenine atadık. Ardından dördüncü satırda “document.write()” komutu ile sonuc değişkenini ekrana yazdırdık. Ekranda 15 ve 22 sayısının toplamı olan 37 sayısını görürüz.
+   
+   3- Çıkarma Operatörü;
+   Operatörün solundaki değerden, sağındaki değeri matematiksel olarak çıkarma işlemine tabii tutar. Operatör sembolü eksi “-” işaretidir.
+   
+   Sözdizimi; degisken1 – degisken2;
+   
+   Örnek;
+   
+   JavaScript
+   1.var sayi1 = 27;
+   2.var sayi2 = 15;
+   3.var sonuc = sayi1 - sayi2;
+   4.document.write(sonuc);
+   
+   Yukarıdaki kodu yazıp çalıştırdığımızda ekranda 27-15 işleminin sonucu olan 12 sayısı görünecektir.
+   
+   4- Çarpma Operatörü:
+   Çarpma operatörü, operatörün solundaki değer ile sağındaki değeri matematiksel olarak çarpma işlemine tabii tutmak için kullanılır. Operatör sembolü yıldız “*” işaretidir.
+   
+   Sözdizimi: sayi1 * sayi2;
+   
+   Örnek;
+   
+   JavaScript
+   1.var sayi1 = 15;
+   2.var sayi2 = 4;
+   3.var sonuc = sayi1 * sayi2;
+   4.document.write(sonuc);
+   
+   Yukarıdaki örnekte sayi1 değişkeni ile sayi2 değişkenini çarpıp sonucu sanuc değişkenine atadık ve “document.write()” komutu ile sonuc değişkeni değerini ekrana yazdırdık. Kodları yazıp çalıştırdığımızda ekrana 60 sayısı yazacaktır.
+   
+   5- Bölme Operatörü:
+   Opertörün solundaki değeri, sağındaki değere bölmek için kullanılır. Operatör sembolü slash “/” işaretidir.
+   
+   Sözdizimi: sayi1/sayi2;
+   
+   Örnek;
+   
+   JavaScript
+   1.var sayi1 = 27;
+   2.var sayi2 = 3;
+   3.var sonuc = sayi1/sayi2;
+   4.document.write(sonuc);
+   
+   Yukarıda “sayi1” değişkeni değerini sayi2 değişkeni değerine bölüp sonuc değişkenine atadık ve sonuc değişkeni değerini “document.write()” komutu ile ekrana yazdırdık. Ekrana yazılan değer 3 sayısı oldu.
+   
+   6- Mod Operatörü;
+   Mod operatörü, operatörün solundaki değerin operatörün sağındaki değere tam bölümünden kalanı almak için kullanılır. Operatör sembolü yüzde “%” işaretidir.
+   
+   Sözdizimi: sayi1%sayi2;
+   
+   Örnek;
+   
+   1.var sayi1 = 60;
+   2.var sayi2 = 15;
+   3.var sonuc = sayi1 % sayi2;
+   4.document.write(sonuc);
+   Yukarıdaki örnekte 60 sayısını 15 sayısına tam böldük ve işlem sonucu kalanını alıp sonuc değişkenine atadık. Ardından sonuc değişkenini “document.write()” komutu ile ekrana yazdırdık. Ekranda yazılan değerimiz bu iki sayının tam bölümünden kalan değer olan 2 sayısı olacaktır.
+       
+     
+   
+   
+   </pre>
+      </body>
+</html>
+
+
+
+
